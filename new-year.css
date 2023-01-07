@@ -24,7 +24,7 @@ header {
 }
 .header-button {
   color: #ffffff;
-  border: 0;
+  border: 2px solid transparent;
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
@@ -32,9 +32,16 @@ header {
   height: 50px;
   border-radius: 8px;
   padding: 0px 10px;
-
   background: #fd6e0a;
+  transition: all 0.3s ease;
 }
+.header-button:hover {
+  color: orange;
+  background: #fff;
+  border: 2px solid orange;
+  cursor: pointer;
+}
+
 /* failures style */
 .failures {
   padding-left: 206px;
@@ -77,26 +84,28 @@ li {
   padding-right: 230px;
 }
 .plan-items {
-  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+.plan-items:hover {
+  border: 1px solid orange;
+  transform: scale(1.1);
 }
 .plan-title {
   font-weight: 700;
   font-size: 30px;
-  text-align: center;
   margin-top: 16px;
   margin-bottom: 16px;
 }
 .plan-subtitle {
   font-weight: 500;
   font-size: 25px;
-  text-align: center;
 }
-.ic1 {
-  padding-left: 30px;
-}
-.ic1f {
-  padding-left: 70px;
-}
+
 /* tail style */
 .tail {
   width: 1140px;
@@ -148,6 +157,12 @@ footer {
   height: 50px;
   border-radius: 8px;
   padding: 0px 10px;
+  transition: all 0.3s ease;
+}
+.footer-button:hover {
+  color: #fff;
+  background-color: orange;
+  cursor: pointer;
 }
 .footer-container {
   display: flex;
@@ -163,7 +178,9 @@ footer {
 .email {
   margin-top: 24px;
   margin-bottom: 24px;
-  height: 40px;
+  width: 180px;
+  outline: none;
+  padding: .8rem 1rem;
 }
 .future-title {
   font-weight: 700;
