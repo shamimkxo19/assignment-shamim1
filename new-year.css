@@ -5,7 +5,7 @@
 header {
   width: 1600px;
   height: 808px;
-  background-image: url(/images/banner/banner1.png);
+  background-image: url(./images/banner/banner1.png);
 }
 .header-container {
   text-align: right;
@@ -102,7 +102,7 @@ li {
   width: 1140px;
   height: 330px;
   margin: 130px 230px;
-  background-image: url(/images/banner/banner1.png);
+  background-image: url(./images/banner/banner1.png);
   margin-bottom: 130px;
 }
 .tail-title {
